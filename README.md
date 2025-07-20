@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# JSON Schema Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, interactive web application for dynamically creating and editing JSON schemas with real-time preview capabilities.
 
-## Available Scripts
+## Live Demo
 
-In the project directory, you can run:
+**[View Live Application](https://json-schema-builder-flax.vercel.app/)**
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Dynamic Field Management**: Add, edit, and remove fields with intuitive controls
+- **Multiple Data Types**: Support for String, Number, and Nested object types
+- **Recursive Nesting**: Create deeply nested structures with unlimited hierarchy levels
+- **Real-time Preview**: Live JSON output that updates instantly as you build your schema
+- **Professional UI**: Clean, responsive interface built with Ant Design components
+- **Tabbed Interface**: Separate views for schema building and JSON preview
+- **Field Name Editing**: Inline editing of field names with immediate feedback
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technology Stack
 
-### `npm test`
+- **Frontend**: React.js
+- **UI Library**: Ant Design
+- **Icons**: Ant Design Icons
+- **Deployment**: Vercel
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Node.js (version 14 or higher)
+- npm or yarn package manager
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/json-schema-builder.git
+cd json-schema-builder
+```
 
-### `npm run eject`
+2. Install dependencies:
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Open your browser and navigate to `http://localhost:3000`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```json
+{
+  "antd": "^5.x.x",
+  "@ant-design/icons": "^5.x.x",
+  "react": "^18.x.x",
+  "react-dom": "^18.x.x"
+}
+```
 
-## Learn More
+## Usage
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Building a Schema
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Add Fields**: Click the "Add Field" button to create new top-level fields
+2. **Edit Field Names**: Click on any field name input to modify the key name
+3. **Select Types**: Choose from String, Number, or Nested using the dropdown menu
+4. **Create Nested Structures**: Select "Nested" type and use "Add Nested" to create sub-fields
+5. **Remove Fields**: Use the delete button to remove unwanted fields
 
-### Code Splitting
+### Viewing Results
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Switch to the "JSON Preview" tab to see the real-time generated JSON schema based on your field configuration.
 
-### Analyzing the Bundle Size
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+src/
+├── App.js          # Main application component
+├── App.css         # Application styles
+├── index.js        # Entry point
+└── index.css       # Global styles
+```
 
-### Making a Progressive Web App
+## Features in Detail
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Field Types
 
-### Advanced Configuration
+- **String**: Basic text field type
+- **Number**: Numeric field type
+- **Nested**: Object type that can contain other fields
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Nested Field Support
 
-### Deployment
+The application supports unlimited nesting levels. Each nested field can contain its own set of sub-fields, allowing for complex hierarchical data structures.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Real-time Updates
 
-### `npm run build` fails to minify
+All changes to the schema are reflected immediately in the JSON preview, providing instant feedback during the building process.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Deployment
+
+This application is deployed on Vercel. To deploy your own instance:
+
+1. Fork this repository
+2. Connect your GitHub account to Vercel
+3. Import the project and deploy
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Create a Pull Request
+
+## Support
+
+For support, please open an issue in the GitHub repository or contact the maintainer.
+
+## Acknowledgments
+
+- Built with React.js for optimal performance and user experience
+- UI components provided by Ant Design
+- Deployed using Vercel's seamless deployment platform
